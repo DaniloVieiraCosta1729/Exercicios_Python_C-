@@ -1,0 +1,2 @@
+Os exercícios que resolverei aqui são inspirados nos exercícios que o prof. Guanabara apresentou como desafio em seus cursos de python.
+Como o meu objetivo é revisar o conteúdo de Python e C#, eu resolverei versões diferentes desses exercícios, tentando sempre aplicar as melhores práticas de programação que eu conseguir e usando o paradigma de orientação a objetos.
