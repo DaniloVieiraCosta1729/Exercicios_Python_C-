@@ -9,43 +9,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 1944263573,
-        "Kind": "Components.Component",
-        "Name": "Colecao_Exercicios.App",
-        "AssemblyName": "Colecao_Exercicios",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Colecao_Exercicios.App",
-          "Common.TypeNamespace": "Colecao_Exercicios",
-          "Common.TypeNameIdentifier": "App"
-        }
-      },
-      {
-        "HashCode": -1623340573,
-        "Kind": "Components.Component",
-        "Name": "Colecao_Exercicios.App",
-        "AssemblyName": "Colecao_Exercicios",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Colecao_Exercicios.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Colecao_Exercicios.App",
-          "Common.TypeNamespace": "Colecao_Exercicios",
-          "Common.TypeNameIdentifier": "App",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1191313583,
         "Kind": "Components.Component",
         "Name": "Colecao_Exercicios.Pages.Counter",
@@ -216,6 +179,43 @@
         }
       },
       {
+        "HashCode": 1897454917,
+        "Kind": "Components.Component",
+        "Name": "Colecao_Exercicios.Shared.NavMenu",
+        "AssemblyName": "Colecao_Exercicios",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Colecao_Exercicios.Shared.NavMenu",
+          "Common.TypeNamespace": "Colecao_Exercicios.Shared",
+          "Common.TypeNameIdentifier": "NavMenu"
+        }
+      },
+      {
+        "HashCode": -903402261,
+        "Kind": "Components.Component",
+        "Name": "Colecao_Exercicios.Shared.NavMenu",
+        "AssemblyName": "Colecao_Exercicios",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Colecao_Exercicios.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Colecao_Exercicios.Shared.NavMenu",
+          "Common.TypeNamespace": "Colecao_Exercicios.Shared",
+          "Common.TypeNameIdentifier": "NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 342734589,
         "Kind": "Components.Component",
         "Name": "Colecao_Exercicios.Shared.MainLayout",
@@ -322,39 +322,39 @@
         }
       },
       {
-        "HashCode": 1897454917,
+        "HashCode": 1944263573,
         "Kind": "Components.Component",
-        "Name": "Colecao_Exercicios.Shared.NavMenu",
+        "Name": "Colecao_Exercicios.App",
         "AssemblyName": "Colecao_Exercicios",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "NavMenu"
+            "TagName": "App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Colecao_Exercicios.Shared.NavMenu",
-          "Common.TypeNamespace": "Colecao_Exercicios.Shared",
-          "Common.TypeNameIdentifier": "NavMenu"
+          "Common.TypeName": "Colecao_Exercicios.App",
+          "Common.TypeNamespace": "Colecao_Exercicios",
+          "Common.TypeNameIdentifier": "App"
         }
       },
       {
-        "HashCode": -903402261,
+        "HashCode": -1623340573,
         "Kind": "Components.Component",
-        "Name": "Colecao_Exercicios.Shared.NavMenu",
+        "Name": "Colecao_Exercicios.App",
         "AssemblyName": "Colecao_Exercicios",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Colecao_Exercicios.Shared.NavMenu"
+            "TagName": "Colecao_Exercicios.App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Colecao_Exercicios.Shared.NavMenu",
-          "Common.TypeNamespace": "Colecao_Exercicios.Shared",
-          "Common.TypeNameIdentifier": "NavMenu",
+          "Common.TypeName": "Colecao_Exercicios.App",
+          "Common.TypeNamespace": "Colecao_Exercicios",
+          "Common.TypeNameIdentifier": "App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
