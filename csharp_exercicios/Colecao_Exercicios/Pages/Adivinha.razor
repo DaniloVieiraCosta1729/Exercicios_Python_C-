@@ -1,0 +1,128 @@
+@page "/adivinha"
+
+<PageTitle>Adivinha</PageTitle>
+
+@code{
+    public int palpite {get; set;} = 0;
+    public string feedback {get; set;} = "";
+    public static int aleatorio()
+    {
+        Random escolhido = new Random();
+        int resposta = escolhido.Next(101);
+
+        return resposta;
+    }
+    int resposta = aleatorio();
+}
+@code
+{
+    List<int> vidas = new List<int>();
+    
+    public string tentativas(int a){
+        if (a == 0)
+        {
+            return "Você tem 5 tentativas.";
+        } else if(5 - a > 1){
+            return $"Você ainda tem {5-a} tentativas.";
+        } else{
+            return "Essa é a sua última tentativa.";
+        }
+    }
+    public string quenteFrio(int p, int r){
+        if (p > r)
+        {
+            return $"O número que eu pensei é menor que {p}. ";
+        } else if(p != 0 || p < r){
+            return $"O número que eu pensei é maior que {p}. ";
+        } else{
+            return $"";
+        }
+    }
+    
+}
+
+<style>
+    .content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .show-box {
+        border-radius: 2px;
+    }
+    .container {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 5px;
+        background-color: rgba(30, 30, 30, 0.8);
+        box-shadow: 3px 6px 8px 3px rgba(30, 30, 30, 0.3);
+        color: white;
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    .vidas {
+        margin-left: 10px;
+    }
+    .acertou {
+        color: green;
+    }
+    .errou {
+        color: red;
+    }
+</style>
+
+<h1>Adivinhe o número!</h1>
+
+<p>Eu pensei em um número que é maior do que zero e menor ou igual a 100. Você consegue adivinhar que número é?</p>
+<p>@tentativas(vidas.Count)</p>
+
+<div>
+    <p>Digite o seu palpite: <input @bind="@palpite"/> </p>
+    <p>@resposta</p>
+</div>
+<section class="content">
+    <div class="container">
+        <div class="show-box">
+            @if (resposta == palpite)
+            {
+                <span class="acertou">
+                    <h1>@palpite</h1>
+                </span>
+            } else{
+                <span class="errou">
+                    <h1>@palpite</h1>
+                </span>
+            }
+        </div>
+        <div>
+            <p>@if (resposta == palpite && vidas.Count > 1)
+            {
+                feedback = "Parabéns! Você acertou.";
+                vidas.Add(palpite);
+            } else if (vidas.Count == 0){
+                feedback = "";
+                vidas.Add(palpite);
+            } else {
+                feedback = "O número não é este.";
+                vidas.Add(palpite);
+            }
+            @feedback @quenteFrio(palpite, resposta)
+            </p>
+        </div>
+        <div>
+            <p>
+                @if (vidas.Count > 0)
+                {
+                    for (int i = 1; i < vidas.Count; i++){
+                        <span class="vidas"> @vidas[i] </span>
+                    }
+                }
+            </p>
+        </div>
+    </div>
+</section>
+
